@@ -26,7 +26,6 @@ Para el modelo lineal se consideraron todos los coeficientes para cada variables
 
 ## Resultados
 Los resultados para cada modelo se reflejan en los gráficos de valores reales contra predichos para la variable objetivo con cada modelo.
-# Proyecto-Crystal-TEC
 
 <img src="./Resultados/ActualPredicho_LR.png" width="33%">
 <img src="./Resultados/ActualPredicho_DT.png" width="33%">
