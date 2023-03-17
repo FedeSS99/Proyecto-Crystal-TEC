@@ -27,6 +27,13 @@ Para el modelo lineal se consideraron todos los coeficientes para cada variables
 ## Resultados
 Los resultados para cada modelo se reflejan en los gráficos de valores reales contra predichos para la variable objetivo con cada modelo.
 
-<img src="./Resultados/ActualPredicho_LR.png" width="33%">
-<img src="./Resultados/ActualPredicho_DT.png" width="33%">
-<img src="./Resultados/ActualPredicho_RF.png" width="33%">
+| Modelo | MS2 | MA | R2 |
+| --- | --- | --- | --- |
+| Lineal | 0.0460 | 0.0347 | 0.5723 |
+| Decision Tree | 0.0479 | 0.0345 | 0.5373 |
+| Random Forest | 0.0428 | 0.0317 | 0.6395 |
+
+
+<img src="./Resultados/ActualPredicho_LR.png" width="50%">
+<img src="./Resultados/ActualPredicho_DT.png" width="50%">
+<img src="./Resultados/ActualPredicho_RF.png" width="50%">
