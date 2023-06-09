@@ -1,35 +1,34 @@
-# Proyecto-Crystal-TEC
+# Proyect-Crystal-TEC
 
-## Descripción
-El proyecto fu enfocado en el análisis y modelado de datos sobre parámetros socioeconomicos de 1990 provenientes de censos de USA e información criminal dada por el FBI en 1995. La fuente de estos datos se localiza en el repositorio de _Machine Learning_ del _Center for Machine Learning and Intelligent Systems_ de la Universidad de California.
+## Description
+The project had in foucs the analysis and modelling of social and economical parametes from 1990, whice have origin from USA census and additional crimininal information given by the FBI in 1995. The source of these datasets is located at the _Machine Learning_ repository of the _Center for Machine Learning and Intelligent Systems_ of University of California.
 
-## Información de los datos
-El conjunto de datos se encuentra bajo el nombre _Communities and Crime Data_ bajo la etiqueta _Social_ y posee las siguientes carácteristicas:
+## Data information
+The datasets can be found with the name of _Communities and Crime Data_ under the _Social_ tag and has the following characteristics:
 
-- Los datos son multivariados y reales
-- Se cuenta con 1994 instancias, que representa en total de comunidades en el estudio, y 128 atributos para describir cada instancia.
-- Habrá instancias con atributos no disponibles.
-- Todos los atributos numéricos fueron transformados a una escala entre 0 y 1.
+- The data is multivariate and real.
+- There is 1994 instances available, which represents the total communities in the study and 128 attributes to describe each instance.
+- Some instances does not have all the attributes available.
+- All the numerical attributes were normalized by a scale from 0 to 1.
 
-## Objetivo
-El último atributo de nombre _ViolentCrimesPerPop_ representa el número total de crímenes violentos por cada 100,000 habitantes y es el atributo objetivo por predecir mediante regresión.
+## Objective
+The objective attribute of name _ViolentCrimesPerPop_ represents the number of violent crimes per 100k habitants; which will be predicted by different regression techniques.
 
+## Modelling
+Three differente models were used to predict the goal variable with training and testing samples of 70% and 30%, respectively.
 
-## Modelado
-Se utilizaron tres modelos diferentes para predecir la variable objetivo con muestras de entrenamiento y prueba del 70% y 30%:
-
-- Regresión lineal
+- Linear regression
 - Decision Tree
 - Random Forest
 
-Para el modelo lineal se consideraron todos los coeficientes para cada variables como positivos y constante nula para evitar predicciones con valor negativo. Para el resto de modelos se ajustaron los hiper parámetros con el fin de hallar la configuración óptima que maximize la constante R<sup>2</sup>.
+For the linear model, the coefficients were all considered as positive and no constant involved to prevent any negative predicted values. For the other models, hyper parameters were adjusted to find the optimal configuration that maximizes the R<sup>2</sup> constant.
 
-## Resultados
-Los resultados para cada modelo se reflejan en los gráficos de valores reales contra predichos para la variable objetivo con cada modelo.
+## Results
+The results for each model are shown in the Predicted vs Original values figures, along with a table that shows the Mean Squared Error, the Mean Absolute Error and the R<sup>2</sup> constant.
 
-| Modelo | MS2 | MA | R2 |
+| Model | MS2 | MA | R2 |
 | --- | --- | --- | --- |
-| Lineal | 0.0460 | 0.0347 | 0.5723 |
+| Linear | 0.0460 | 0.0347 | 0.5723 |
 | Decision Tree | 0.0479 | 0.0345 | 0.5373 |
 | Random Forest | 0.0428 | 0.0317 | 0.6395 |
 
